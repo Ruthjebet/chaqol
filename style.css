@@ -803,9 +803,6 @@ ol li:last-child{
         margin-left:5px;
         width: auto;
     }
-    nav{
-        width:80%;
-    }
     nav label{
         display: block;
     }
