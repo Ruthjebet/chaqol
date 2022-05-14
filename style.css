@@ -803,6 +803,9 @@ ol li:last-child{
         margin-left:5px;
         width: auto;
     }
+    nav{
+        width:80%;
+    }
     nav label{
         display: block;
     }
@@ -1068,7 +1071,6 @@ ol li:last-child{
     .footer{
         font-size:12px;
     }
-    
 }
 @media (max-width:500px){
     .header{
