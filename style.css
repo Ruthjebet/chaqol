@@ -1,0 +1,1098 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+    background-color:white;
+}
+#container{
+    width:100%;
+}
+/*header*/
+.header{
+    background:darkgreen;
+    height:5vh;
+    padding: 10px;
+    width: 100%;
+    
+}
+.header h4{
+    color: white;
+    margin-left: 40px;
+    font-weight: 100;
+}
+#toggle{
+    display: none;
+}
+.nav{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    opacity: 90%;
+}
+nav{
+    width: 100%;
+    height:10vh;
+    background-color: darkgrey;
+    z-index: 1;
+}
+nav label{
+    float: left;
+    color: black;
+    font-size: 22px;
+    margin-top:10px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+
+}
+#headerlogo{ 
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  float:left;
+}
+#headerlogo a{
+    color: black;
+}
+font{
+    color:crimson;
+    font-size:20px;
+}
+nav ul{
+    float:right;
+    margin-right:100px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 30px;
+    margin: 10px 5px;
+}
+nav ul li a{
+    clear: right;
+    color: black;
+    font-size:18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,nav ul li a:hover{
+    border-bottom: 4px solid crimson;
+    transition: 0.5s;
+}
+.icons a{
+    color: black;
+}
+.fa-search{
+    position: absolute;
+    left:95%;
+    top: 50%;
+    
+}
+.main {
+    position:relative;
+    height: 85vh;
+    width: 100%;
+}
+.main-left{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text h4{
+    color:crimson;
+    font-size: 2rem;
+}
+.text h2{
+    font-size: 3rem;
+}
+.text p{
+    font-size: 2rem;
+    font-weight: 400;
+    padding:0 20px 20px 0px;
+}
+.text-btn{
+    margin-top:50px;
+    color: black;
+    text-decoration: none;
+    border: solid 3px crimson;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.text-btn:hover{
+    background: crimson;
+}
+.main-right{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+}
+.banner img{
+    background-size: contain;
+    position:relative;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    padding:50px;
+}
+.main2{
+    position: relative;
+    height: 85vh;
+    width: 100%;
+
+}
+.main2 .main-left{
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+}
+.order1{
+    width: 140px;
+    height: 5px;
+    background:crimson;
+    margin:15px 0 20px 0;
+}
+.main2 .main-left img{
+    width: 80%;
+    max-width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+.main2 .main-right{
+    position: absolute;
+    width: 75%;
+    right: 0;
+    top:0;
+    height: 100%;
+    background: #efefef;
+}
+.main2 .main-right .content{
+    position: absolute;
+    top:0;
+    width: 65%;
+    height:100%;
+    left: 30%;
+    text-align:justify;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+/*pricing*/
+.pricing{
+    margin: 40px 0;
+    padding: 20px 0;
+    background:#efefef;
+    color:#434343;
+    text-align: center;
+}
+.singleprice{
+    background-color:white;
+}
+.singleprice:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.7);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.price-head {
+    background-color: darkgreen;
+    display: inline;
+    float: left;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+.price-head h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.price-content{
+    text-align: justify;
+    display: inline;
+    float: left;
+    padding: 0px 15px;
+    width: 100%;
+    
+}
+.fa-check-circle{
+    color: crimson;
+}
+.price-content ol li{
+    border-bottom: 1px solid darkgrey;
+    padding: 15px 10px;    
+}
+ol li:last-child{
+    border: none;
+}
+.price-btn{
+    width: 100%;
+    padding:0 0 20px 0;
+}
+.buy-btn{
+    background-color:darkgreen;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 40px;
+    transition: 0.5s;
+    color: white;
+    
+}
+.buy-btn:hover{
+    border-color: 1px solid white;
+    background-color: crimson;
+}
+/*testimonial*/
+.testimonials{
+    padding: 40px 0;
+    background:white;
+    color:#434343;
+    text-align: center;
+}
+.inner{
+    max-width: 1200px;
+    margin:auto;
+    overflow: hidden;
+    padding: 0 20px;  
+}
+.order{
+    width: 160px;
+    height: 5px;
+    background:crimson;
+    margin: 26px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 24%;
+    max-width: 24%;
+    padding: 15px;
+}
+.testimony{
+    background:#efefef;
+    padding: 30px;
+}
+.testimony p{
+    font-size: 16px;
+    line-height: 30px;
+}
+.testimony img{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
+.testimony:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.name{
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: right;
+    color: black;
+}
+.fa-quote-left,.fa-quote-right{
+    color: crimson;
+}
+.name span{
+    font-size: 12px;
+    color: crimson;
+    
+}
+.stars{
+    color:black;
+    margin: 20px 0 20px 0;    
+}
+.stars .fas{
+    color: darkgreen;
+}
+.stars .far{
+    color: crimson;
+}
+/*contact us*/
+.contact{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+    text-align: center;
+}
+.form-control{
+    border-radius: 0;
+    border: none;
+    width: 80%;
+    padding: 15px;
+}
+::placeholder{
+    color: #999 !important;
+}
+.form-group{
+    padding:10px;   
+}
+.contact-btn{
+    font-size: 16px;
+    /*margin-right: 50px;*/
+    float: right;
+    color: black;
+    text-decoration: none;
+    border: solid 3px crimson;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.contact-btn:hover{
+    background: crimson;
+}
+.col1{
+    flex: 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+.follow{
+    padding: 10px;
+    margin: 15px;
+    
+}
+.followlink{
+    color:#777;
+}
+.follow .fa,.fab{
+    margin: 10px;
+    color: crimson;
+    font-weight: bold;
+}
+/*About us*/
+.aboutus{
+    padding:0 6%;
+}
+.main-left1{
+    position:relative;
+    top:0;
+    left:0;
+    height:100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    line-height: 30px;
+}
+.main-right1{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 45%;
+    bottom: 0;
+}
+.main-right1 img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    /*padding: 50px 0;*/
+}
+/*motto*/
+.aboutus1{
+    padding: 0 6%;
+    background:#efefef;
+}
+.motto{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.motto p{
+    line-height: 30px;
+}
+.moto{
+    padding-top:5%;
+    margin: 10px;
+    width:33%;
+}
+.vision{
+    padding-top: 5%;
+    margin: 10px;
+    width: 33%;
+    
+}
+.mission{
+    padding-top: 5%;
+    margin: 10px;
+    width: 33%;
+}
+/*choose chaqol*/
+.main-right2{
+    width:30%;
+    position:relative;
+    top:0;
+    left:0;
+    height: 100%;
+    bottom: 0;
+}
+.main-right2 img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.main-left2{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width: 70%;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.main-left2 h2{
+    margin-top: 20px;
+}
+.main-left2 .fa-thumbs-up,.main-left1 .fa-shapes{
+    font-size: 50px;
+    color: darkgreen;
+}
+.main-left2 .motto{
+    padding-top:5%;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.main-left2 .moto,.main-left2 .vision,.main-left2 .mission{
+    padding-top:0;
+}
+/*Our products*/
+.content1{
+    line-height: 30px;
+    text-align: center;
+    margin: 20px;
+}
+.list {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    margin-left: 30%;
+    
+}
+/*footer*/
+.footer{
+    text-align: center;
+    background: darkgrey;
+    padding: 12px;
+    color: black;
+}
+.fa-heart{
+    color: red;
+    margin: 3px;
+}
+@media screen and (max-width:1024px){
+    #container{
+        width: 100%;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .header h4{
+        font-size:1rem;
+        width: auto;
+    }
+    #headerlogo{ 
+      margin-left: 30px; 
+      font-size: 20px;
+    }
+    font{
+        font-size:20px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    .icons{
+        font-size: 20px;
+    }
+    .icons .fa-search{
+       left:90%;
+    }
+    .icons .fa-user{
+        left: 93%;
+    }
+    .icons .fa-shopping-cart{
+        left:96%;
+
+    }
+    .main{
+        height: 70vh;
+    }
+    .main-left{
+    position:absolute;
+    top:50%;
+    left:0;
+    height:50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#D4C8C8;
+    z-index: 1;
+    opacity: 0.7;
+    }
+    .text h4{
+        color:crimson;
+        font-size:3rem;
+    }
+    .text h2{
+        font-size: 2rem;
+    }
+    .text p{
+        font-size: 1rem;
+        font-weight: 400;
+        padding:0 20px 20px 0px;
+    }
+    .text-btn{
+        font-size: 1rem;
+    }
+    .main-right{
+        position: absolute;
+        top:0;
+        right:0;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+    .banner img{
+        background-size: cover;
+        position:relative;
+        height:100%;
+        width:100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .main2{
+    position:relative;
+    height:50vh;
+    width: 100%;
+
+    }
+    .main2 .main-left{
+        display: none;
+    }
+    .main2 .main-right{
+        position:absolute;
+        width:100%;
+        right: 0;
+        top:0;
+        height:50vh;
+        background:white;
+    }
+    .main2 .main-right .content{
+        position: absolute;
+        padding: 20px;
+        font-size: 1rem;
+        line-height: 30px;
+        top:0;
+        width: 100%;
+        height:100%;
+        left:0;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    /*pricing*/
+    .pricing,.price-head h2,.buy-btn{
+        font-size: 1rem;
+    }
+    /*testimonials*/
+    .testimony p{
+    font-size: 1rem;
+    line-height: 30px;
+    }
+    .name{
+    font-size: 1rem;
+   }
+    .name span{
+    font-size: 14px;
+    }
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+    /*contact us*/
+    .contact,.btn,.form-control{
+        font-size: 1rem;
+    }   
+    .col1{
+    flex: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+    /*About us*/
+    .aboutus{
+        padding:0 6%;
+    }
+    .aboutus h4,h2{
+        font-size: 20px;
+    }
+    .aboutus .main2,.aboutus1 .main2{
+    position:relative;
+    height:100vh;
+    width: 100%;
+
+    }
+    .aboutus1 .main2 .main-left1{
+        position:absolute;
+        top:50vh;
+        height:50vh;
+        width: 100%;
+    }
+    .aboutus1 .main2 .main-right1{
+        position: relative;
+        top: 0;
+        height: 50vh;
+    
+    }
+    .main-left1{
+        position:absolute;
+        top:50vh;
+        height:50vh;
+        width: 100%;
+    }
+    .content{
+        line-height: 20px;
+    }
+    .main-right1{
+        position: absolute;
+        top:0;
+        height:50vh;
+        width:100%;
+    }
+    /*motto*/
+    .aboutus1{
+        padding: 0 6%;
+        background:#efefef;
+    }
+    .motto{
+        height:auto;
+        display: flex;
+        flex-direction:column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .motto p{
+        line-height:30px;
+    }
+    .moto{
+        padding-top:0;
+        margin:0;
+        width:100%;
+    }
+    .vision{
+        padding-top: 0;
+        margin:0;
+        width: 100%;
+
+    }
+    .mission{
+        padding-top: 0;
+        margin:0;
+        width: 100%;
+    }
+    /*choose chaqol*/
+    .main-right2{
+        width:100%;
+        position:relative;
+        top:0;
+        left:0;
+        height:50vh;
+    }
+    .main-right2 img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+    .main-left2{
+        position:absolute;
+        top:50%;
+        right:0;
+        height:50vh;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .main-left2 .motto{
+    padding-top:5%;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+   }
+    /*Our products*/
+    .content1 h4,p{
+        line-height: 20px;
+    }
+    .list {
+        margin-left:10%;
+
+    }
+    /*environmental*/
+    .main-left1 .fa{
+        font-size: 50px;
+        color: darkgreen;
+    }
+    .main-left1 .motto{
+        padding-top:5%;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    .main-left1 .moto,.main-left1 .vision,.main-left1 .mission{
+        padding-top:0;
+    }
+    /*Our products*/
+    .content1{
+        line-height: 30px;
+    }
+    .list {
+        font-size: 20px;
+
+    }
+    /*footer*/
+    .footer{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:960px){
+    #container{
+        width: 100%;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .header h4{
+        font-size:1rem;
+        margin-left:5px;
+        width: auto;
+    }
+    nav label{
+        display: block;
+    }
+    #headerlogo{ 
+      margin-top: 10px;
+      font-size: 22px;
+      margin-left:40px;
+
+    }
+    font{
+        font-size: 22px;
+    }
+    nav ul{
+        position: fixed;
+        width:80%;
+        text-align: center;
+        background: black;
+        height: 50vh;
+        top:60px;
+        left: -100%;
+        transition: all.5s;
+        z-index: 1;
+    }
+    nav ul li{
+       display: block;
+        line-height: 40px;
+    }
+    nav ul li a{
+        clear:right;
+        color: white;
+        font-size:18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
+    #toggle:checked~ul{
+        left:0;
+    
+    }
+    .icons{
+        font-size: 18px;
+    }
+    .icons .fa-search{
+        position: absolute;
+        top: 45%;
+        left:78%;
+    }
+    .icons .fa-user{
+        position: absolute;
+        top: 45%;
+        left: 85%;        
+    }
+    .icons .fa-shopping-cart{
+        position: absolute;
+        top: 45%;
+        left:90%;
+    }
+    .text h4{
+        font-size: 1rem;
+    }
+    .text h2{
+        font-size: 1.5rem;
+    }
+    .text p{
+        font-size: 1rem;
+    
+    }
+    .main{
+        height: 85vh;
+    }
+    .main-left{
+    position:absolute;
+    top:50%;
+    left:0;
+    height:50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#D4C8C8;
+    z-index: 1;
+    opacity: 0.7;
+    }
+    .text h4{
+        color:crimson;
+        font-size:2rem;
+    }
+    .text h2{
+        font-size: 1.5rem;
+    }
+    .text p{
+        font-size: 1rem;
+        font-weight: 400;
+        padding:0 20px 20px 0px;
+    }
+    .text-btn{
+        font-size: 16px;
+    }
+    .main-right{
+        position: absolute;
+        top:0;
+        right:0;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+    .banner img{
+        background-size: cover;
+        position:relative;
+        height:100%;
+        width:100%;
+        max-width: 100%;
+        border-radius: 0;
+        padding:0;
+    }
+    .main2{
+    position:relative;
+    height: 85vh;
+    width: 100%;
+
+    }
+    .main2 .main-left{
+        display: none;
+    }
+    .main2 .main-right{
+        position:relative;
+        width:100%;
+        right: 0;
+        top:0;
+        height: 85vh;
+        background:white;
+    }
+    .main2 .main-right .content{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    /*pricing*/
+    .pricing,.price-head h2,.buy-btn{
+        font-size: 16px;
+    }
+    /*testimonials*/
+    .testimony p{
+    font-size: 16px;
+    line-height: 30px;
+    }
+    .name{
+    font-size:16px;
+   }
+    .name span{
+    font-size: 12px;
+    }
+    /*contact us*/
+    .contact,.btn,.form-control{
+        font-size: 16px;
+    }  
+    /*aboutus*/
+    .aboutus .main2,.aboutus1 .main2{
+    position:relative;
+    height:100vh;
+    width: 100%;
+
+    }
+    .aboutus1 .main2 .main-left1,.aboutus .main2 .main-left1{
+        position:absolute;
+        top:0;
+        height:100%;
+        width: 100%;
+        opacity: 100%;
+        z-index: 1;
+    }
+    .aboutus1 .main2 .main-right1,aboutus .main2 .main-right1 img{
+        position: relative;
+        top: 0;
+        height: 100%;
+        opacity: 40%;
+    
+    }
+    .main-right1 img{
+        height: 100vh;
+        width: 100%;
+        opacity: 40%;
+    }
+    .aboutus h4,h2{
+        font-size: 16px;
+    }
+    
+    .motto p{
+        line-height: 35px;
+    }
+    .moto{
+        padding-top:0;
+        margin:0;
+        width:100%;
+    }
+    .vision{
+        padding-top: 0;
+        margin:0;
+        width: 100%;
+
+    }
+    .mission{
+        padding-top: 0;
+        margin:0;
+        width: 100%;
+    }
+    .main-right2{
+        display: none;
+    }
+    .main-left2{
+        position:absolute;
+        top:0;        
+        right:0;
+        height:70vh;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        z-index: 1;
+    }
+    /*Our products*/
+    .content1{
+        line-height: 20px;
+    }
+    .list {
+        margin-left:10%;
+        line-height: 30px;
+
+    }
+    .aboutus1 .main2 .main-left2{
+        position:absolute;
+        top:0;
+        height:100%;
+        width: 100%;
+    }
+    .aboutus1 .main2 .main-right2 img{
+        display: none;
+    
+    }
+    /*environmental*/
+    .main-left1 .fa{
+        font-size: 50px;
+        color: darkgreen;
+    }
+    .main-left1 .motto{
+        padding-top:5%;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    .main-left1 .moto,.main-left1 .vision,.main-left1 .mission{
+        padding-top:0;
+    }
+    /*Our products*/
+    .content1{
+        line-height: 16px;
+    }
+    .list {
+        font-size: 16px;
+
+    }
+    /*footer*/
+    .footer{
+        font-size:12px;
+    }
+    
+}
+@media (max-width:500px){
+    .header{
+        padding:8px 1px 8px 1px;
+    }
+    .header h4{
+        font-size:0.8rem;
+        margin-left: 20px;
+    }
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .col1{
+    flex: 100%;
+    max-width: 100%;
+    }
+    .follow .fa,.fab{
+    margin:6px;
+   }
+}
+@media (max-width:320px){
+    #container{
+        min-width:320px;
+        overflow: auto;
+    }
+}
