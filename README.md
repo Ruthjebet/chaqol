@@ -1,5 +1,5 @@
 # chaqol
 Website for purchasing charcoal briquettes
 
-#Deployed on netlify
+View it on
 https://chaqolbriquettes.netlify.app/
